@@ -13,7 +13,7 @@
 - name: get user facts for nodejs_install_npm_user
   user:
     name: "{{ nodejs_install_npm_user }}"
-    register: nodejs_install_npm_user_facts
+  register: nodejs_install_npm_user_facts
 
 - name: Create npm global directory
   file:
