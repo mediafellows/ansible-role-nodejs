@@ -1,6 +1,6 @@
 # Ansible Role: Node.js
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-nodejs.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-nodejs)
+[![Build Status](https://travis-ci.org/mediapeers/ansible-role-nodejs.svg?branch=master)](https://travis-ci.org/mediapeers/ansible-role-nodejs)
 
 Installs Node.js on RHEL/CentOS or Debian/Ubuntu.
 
@@ -45,17 +45,14 @@ None.
 
 ## Example Playbook
 
-    - hosts: utility
-      vars_files:
-        - vars/main.yml
+    - hosts: some_hosts
+      vars:
+        nodejs_version: '5.8.0'
+        nodejs_npm_global_packages:
+          - name: jslint
+          - name: node-sass
       roles:
         - geerlingguy.nodejs
-
-*Inside `vars/main.yml`*:
-
-    nodejs_npm_global_packages:
-      - name: jslint
-      - name: node-sass
 
 ## License
 
