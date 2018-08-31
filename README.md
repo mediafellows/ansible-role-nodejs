@@ -1,6 +1,6 @@
-# Ansible Role: Node.js
+[![Build Status](https://travis-ci.com/mediapeers/ansible-role-nodejs.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-nodejs)
 
-[![Build Status](https://travis-ci.org/mediapeers/ansible-role-nodejs.svg?branch=master)](https://travis-ci.org/mediapeers/ansible-role-nodejs)
+# Ansible Role: Node.js
 
 Installs Node.js on RHEL/CentOS or Debian/Ubuntu.
 
