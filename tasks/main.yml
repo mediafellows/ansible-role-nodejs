@@ -1,4 +1,9 @@
 ---
+
+- name: Output NodeJS major version to use
+  debug:
+    var: nodejs_version
+
 - include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
