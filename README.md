@@ -6,15 +6,15 @@ Installs Node.js on RHEL/CentOS or Debian/Ubuntu.
 
 ## Requirements
 
-Requires the EPEL repository on RedHat/CentOS (you can install it by simply adding the `geerlingguy.repo-epel` role to your playbook).
+Machine running supported Linux versions, see above and in meta/main.yml
 
 ## Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    nodejs_version: "0.12"
+    nodejs_version: "8.x"
 
-The Node.js version to install. "0.12" is the default and works on all supported OSes. Other versions such as "0.10", "4.x", "5.x", and "6.x" should work on the latest versions of Debian/Ubuntu and RHEL/CentOS.
+The Node.js version to install. "8.x" is the default and works on all supported OSes. Other versions such as "8.x", "11.x", "12.x", and "12.x" should work on the latest versions of Debian/Ubuntu and RHEL/CentOS.
 
     nodejs_install_npm_user: "{{ ansible_ssh_user }}"
 
@@ -52,7 +52,7 @@ None.
           - name: jslint
           - name: node-sass
       roles:
-        - geerlingguy.nodejs
+        - mediapeers.nodejs
 
 ## License
 
@@ -60,4 +60,4 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+This role was created in 2014 by Jeff Geerling, see original repo here: https://github.com/geerlingguy/ansible-role-nodejs
