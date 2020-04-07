@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mediapeers/ansible-role-nodejs.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-nodejs)
+[![Build Status](https://travis-ci.com/mediafellows/ansible-role-nodejs.svg?branch=master)](https://travis-ci.com/mediafellows/ansible-role-nodejs)
 
 # Ansible Role: Node.js
 
@@ -52,7 +52,7 @@ None.
           - name: jslint
           - name: node-sass
       roles:
-        - mediapeers.nodejs
+        - mediafellows.nodejs
 
 ## License
 
