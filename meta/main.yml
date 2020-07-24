@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: nodejs
   author: geerlingguy
   description: Node.js installation for Linux
   company: "Midwestern Mac, LLC"
