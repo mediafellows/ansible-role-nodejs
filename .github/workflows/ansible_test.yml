@@ -10,8 +10,11 @@ jobs:
       ANSIBLE_FORCE_COLOR: true
     steps:
 
-      - name: Remove uneeded apt repos
+      - name: Remove uneeded apt repos (that cause issues)
         run: sudo rm /etc/apt/sources.list.d/yarn*
+
+      - name: Check if nodejs is already installed on CI runner
+        run: nodejs --version || node --version || echo 'Uninstalled'
 
       - name: Checkout code from Github
         uses: actions/checkout@v2
