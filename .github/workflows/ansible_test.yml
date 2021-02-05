@@ -18,7 +18,7 @@ jobs:
 
       - name: Remove NodeJS apt package (this role will install own NodeJS so cleanup is needed for validation)
         run: |
-          sudo apt-get -y purge nodejs
+          sudo apt-get -y purge node*
           sudo apt-get -y auoremove
 
       - name: Checkout code from Github
