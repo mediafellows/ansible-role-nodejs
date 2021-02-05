@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mediafellows/ansible-role-nodejs.svg?branch=master)](https://travis-ci.com/mediafellows/ansible-role-nodejs)
+[![Ansible-Test](https://github.com/mediafellows/ansible-role-nodejs/workflows/Ansible-Test/badge.svg)](https://github.com/mediafellows/ansible-role-nodejs/actions?query=workflow%3AAnsible-Test)
 
 # Ansible Role: Node.js
 
