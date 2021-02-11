@@ -12,7 +12,7 @@
 
 - name: Define nodejs_install_npm_user
   set_fact:
-    nodejs_install_npm_user: "{{ ansible_user }}"
+    nodejs_install_npm_user: "{{ ansible_user_id }}"
   when: nodejs_install_npm_user is not defined
 
 - name: get user facts for nodejs_install_npm_user
