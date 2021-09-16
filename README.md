@@ -12,9 +12,9 @@ Machine running supported Linux versions, see above and in meta/main.yml
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    nodejs_version: "8.x"
+    nodejs_version: "12.x"
 
-The Node.js version to install. "8.x" is the default and works on all supported OSes. Other versions such as "8.x", "11.x", "12.x", and "12.x" should work on the latest versions of Debian/Ubuntu and RHEL/CentOS.
+The Node.js version to install. "8.x" is the default and works on all supported OSes. Other versions such as "10x", "14.x" and "16.x" should work on the latest versions of Debian/Ubuntu and RHEL/CentOS.
 
     nodejs_install_npm_user: "{{ ansible_ssh_user }}"
 
