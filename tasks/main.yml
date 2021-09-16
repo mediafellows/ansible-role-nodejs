@@ -24,7 +24,7 @@
   ansible.builtin.file:
     path: "{{ npm_config_prefix }}"
     owner: "{{ nodejs_install_npm_user }}"
-    ansible.builtin.group: "{{ nodejs_install_npm_user_facts.group }}"
+    group: "{{ nodejs_install_npm_user_facts.group }}"
     state: directory
 
 - name: Add npm_config_prefix bin directory to global $PATH.
